@@ -7,7 +7,8 @@ module Types
     root_type.interfaces = []
 
     root_type.fields = Util::FieldCombiner.combine([
-      Mutations::InvestorMutation
+      Mutations::InvestorMutation,
+      Mutations::MeetingMutation
     ])
   end
 end

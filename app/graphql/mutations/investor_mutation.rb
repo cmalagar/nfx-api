@@ -82,7 +82,7 @@ module Mutations
                 
                 # return all investors
                 investors
-              end
+            end
         end
     end
 end
