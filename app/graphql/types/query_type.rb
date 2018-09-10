@@ -2,7 +2,7 @@
 
 module Types
   QueryType = GraphQL::ObjectType.new.tap do |root_type|
-    
+  # class MutationType < Types::BaseObject
     # Add root-level fields here.
     root_type.name = 'QueryType'
     root_type.description = 'The query root'

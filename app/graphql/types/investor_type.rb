@@ -11,5 +11,9 @@ module Types
       field :contact, !types.String
       field :stage, !types.String
       field :interest, !types.String
+
+      field :meetings, types[Types::MeetingType] do
+        resolve -> (investor, _args, _ctx) { investor.meetings }
+      end
     end
 end
